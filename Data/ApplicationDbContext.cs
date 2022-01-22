@@ -15,5 +15,7 @@ namespace Marfriing.Data
         }
         public DbSet<Marfriing.Models.Pecuarista> Pecuarista { get; set; }
         public DbSet<Marfriing.Models.Animal> Animal { get; set; }
+        public DbSet<Marfriing.Models.CompraGado> CompraGado { get; set; }
+        public DbSet<Marfriing.Models.CompraGadoItem> CompraGadoItem { get; set; }
     }
 }
