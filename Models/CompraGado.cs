@@ -9,7 +9,7 @@ namespace Marfriing.Models
     {
         public int Id { get; set; }
         public int IdPecuarista { get; set; }
-        public double DataEntrega { get; set; }
+        public DateTime DataEntrega { get; set; }
 
     }
 }
