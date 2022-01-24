@@ -11,5 +11,15 @@ namespace Marfriing.Models
         public int IdPecuarista { get; set; }
         public DateTime DataEntrega { get; set; }
 
+        public ICollection<CompraGadoItem> compraGadoItem;
+        public ICollection<CompraGadoItem> GetCompraGadoItem()
+        {
+            return compraGadoItem;
+        }
+        public void SetCompraGadoItem(ICollection<CompraGadoItem> value)
+        {
+            compraGadoItem = value;
+        }
+
     }
 }
