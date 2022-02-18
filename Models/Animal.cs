@@ -13,15 +13,7 @@ namespace Marfriing.Models
 
         [Column(TypeName = "decimal(18, 6)")]
         public decimal Preco { get; set; }
-
-        public ICollection<CompraGadoItem> compraGadoItem;
-        public ICollection<CompraGadoItem> GetCompraGadoItem()
-        {
-            return compraGadoItem;
-        }
-        public void SetCompraGadoItem(ICollection<CompraGadoItem> value)
-        {
-            compraGadoItem = value;
-        }
+        public virtual List<CompraGadoItem> CompraGadoItems { get; set; }
+       
     }
 }
